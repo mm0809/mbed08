@@ -10,7 +10,7 @@ struct Config {
   const int seq_length = 64;
 
   // The number of expected consecutive inferences for each gesture type.
-  const int consecutiveInferenceThresholds[label_num] = {20, 10,5};
+  const int consecutiveInferenceThresholds[label_num] = {20, 10,3};
 
   const char* output_message[label_num] = {
         "RING:\n\r"
@@ -30,7 +30,7 @@ struct Config {
         "   *             \n\r"
         "  *              \n\r"
         " * * * * * * * * \n\r",
-        "Up and down\n\r"};
+        "RtoL\n\r"};
 };
 
 Config config;
